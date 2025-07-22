@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rishivardhan's CI/CD Node.js EC2 Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="terminal">
+    <div class="line"># Initializing Node.js Project...</div>
+    <div class="code" data-code="npm init -y\nInstalling dependencies...\n✔ express\n✔ dotenv"></div>
+
+    <div class="line"># Writing REST API Endpoints...</div>
+    <div class="code" data-code="GET /api/users -> 200 OK\nPOST /api/login -> Authenticated"></div>
+
+    <div class="line"># Containerizing with Docker...</div>
+    <div class="code" data-code="Dockerfile created\ndocker build -t node-app .\n✔ Build successful"></div>
+
+    <div class="line"># Pushing to GitHub...</div>
+    <div class="code" data-code="git add .\ngit commit -m 'Initial commit'\ngit push origin main"></div>
+
+    <div class="line"># Deploying to EC2...</div>
+    <div class="code" data-code="Connecting to ec2-user@3.92.x.x...\nUploading files...\n✔ Deployment complete"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
